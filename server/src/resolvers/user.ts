@@ -118,7 +118,7 @@ export class UserResolver {
       return {
         errors: [
           {
-            field: "login",
+            field: "username",
             message: "username or password is incorrect",
           },
         ],
@@ -129,7 +129,7 @@ export class UserResolver {
       return {
         errors: [
           {
-            field: "login",
+            field: "password",
             message: "username or password is incorrect",
           },
         ],

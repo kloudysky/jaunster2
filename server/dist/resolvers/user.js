@@ -139,7 +139,7 @@ let UserResolver = class UserResolver {
                 return {
                     errors: [
                         {
-                            field: "login",
+                            field: "username",
                             message: "username or password is incorrect",
                         },
                     ],
@@ -150,7 +150,7 @@ let UserResolver = class UserResolver {
                 return {
                     errors: [
                         {
-                            field: "login",
+                            field: "password",
                             message: "username or password is incorrect",
                         },
                     ],
