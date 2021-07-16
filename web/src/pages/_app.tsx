@@ -3,11 +3,14 @@ import { Provider, createClient } from "urql";
 
 const client = createClient({
   url: "http://localhost:9999/graphql",
+  fetchOptions: {
+    credentials: "include",
+  },
 });
 
 import theme from "../theme";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: any) {
   return (
     <Provider value={client}>
       <ChakraProvider resetCSS theme={theme}>
