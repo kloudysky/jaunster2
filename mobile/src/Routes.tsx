@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
-import {ActivityIndicator, Text} from 'react-native';
+import {Text} from 'react-native';
 import {Center} from './Center';
 import {Button} from 'react-native';
 import {AuthNavProps, AuthParamList} from './AuthParamList';
@@ -48,7 +48,7 @@ function Index() {
 }
 
 export const Routes: React.FC<RoutesProps> = ({}) => {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     //check if user is logged in or
