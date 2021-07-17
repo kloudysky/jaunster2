@@ -1,0 +1,4 @@
+fragment LoggedInUser on User {
+  id
+  username
+}
